@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+  <meta charset="utf-8">
+  <title>Pàgina Contacte - AquaNadadors</title>
+  <meta name="author" content="Rocío Albelda">
+  <meta name="description" content="Club de natació AquaNadadors">
+  <link rel="stylesheet" href="../css/estils.css"> 
+  <link rel="icon" href="../images/imagenFavicon.jpg">
+</head>
+<body>
+
+  <body>
+      <!-- Titol -->
+  <header>
+    <h1>AquaNadadors</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Inici</a></li>
+        <li><a href="quisom.html">Qui som</a></li>
+        <li><a href="articles.html">Articles</a></li>
+        <li><a href="nadadors.html">Nadadors</a></li>
+        <li><a href="especialitats.html">Especialitats</a></li>
+        <li><a href="contacte.html">Contacte</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Imatge principal -->
+  <section id="imagen-principal">
+    <img src="../images/imagenprincipal.png" alt="Imagen principal de AquaNadadors">
+  </section>
+
+
+    <main>
+      <div class="formulari">
+
+       <form action="#" method="post">
+
+        <fieldset style="width: 700px;">
+        <legend>Dates de l'usuari</legend> <br>
+
+        <!-- 1 Text -->
+        <label for="nom">Nom complet</label>
+        <input type="text" id="nom" name="nom" placeholder="Escriu el teu nom" required>
+        
+        <br>
+        <br>
+
+        <!-- 2 Gmail -->
+        <label for="email">Correu electr&oacute;nic</label>
+        <input type="email" id="email" name="email" placeholder="exemple@correu.com" required>
+
+        <br>
+        <br>
+
+        <!-- 3 Numero -->
+        <label for="edat">Edat</label>
+        <input type="number" id="edat" name="edat" min="0" max="120" required>
+
+        <br>
+        <br>
+
+        <!-- 4 Color -->
+        <label for="color">Color preferit</label>
+        <input type="color" id="color" name="color">
+
+        <br>
+        <br>
+
+        <!-- 5 Tipus hidden -->
+        <input type="hidden" name="formulari" value="contacte">
+
+        <br>
+        <br>
+
+        <!-- 6 Telefono -->
+        <label for="telefon">Tel&eacute;fono </label>
+        <input type="tele" id="telefon" name="telefon" placeholder="+34 600 000 000">
+
+        <br>
+        <br>
+
+        <!-- 7 Fecha -->
+        <label for="data">Data de contacte</label>
+        <input type="date" id="data" name="data">
+
+        <br>
+        <br>
+
+        <!-- Radio buttons -->
+        <label>G&eacute;nere:</label>
+        <input type="radio" id="home" name="genere" value="home">
+        <label for="home">Home</label>
+        <input type="radio" id="dona" name="genere" value="dona">
+        <label for="dona">Dona</label>
+
+        <br>
+        <br>
+
+        <!-- Checkbox -->
+        <label>
+            <input type="checkbox" name="subscripcio" checked>
+            Vuic recibir not&iacute;cies i actualitzacions
+        </label>
+
+        <br>
+        <br>
+
+        <!-- Select -->
+        <label for="motiu">Motiu del missatge</label>
+        <select id="motiu" name="motiu" required>
+            <option value="">-- Selecciona una opci&oacute; --</option>
+            <option value="informacio">Sol·licitud d'informaci&oacute;</option>
+            <option value="suport">Suport t&eacute;cnic</option>
+            <option value="altres">Altres</option>
+        </select>
+
+        <br>
+        <br>
+
+        <!-- Textarea -->
+        <label for="missatge">Missatge</label>
+        <textarea id="missatge" name="missatge" rows="5" placeholder="Escriu el teu missatge" required></textarea>
+
+        <br>
+        <br>
+
+        <!-- Boto enviar -->
+        <button type="submit">Enviar</button>
+
+        </fieldset>
+      
+      </form>
+
+      </div>
+    
+    </main>
+    
+    <footer></footer>
+  
+  </body>
+</html>
