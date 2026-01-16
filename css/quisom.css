@@ -1,0 +1,143 @@
+@font-face{
+  font-family: 'Roboto-Regular';;
+  src: url('../fonts_pagina/Roboto-Regular.ttf');
+}
+
+/* Configuracio de la pagina i el body */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body{
+  font-family: 'Roboto-Regular';
+  background-color: #f0f8ff;
+  color: #023e8a;
+  line-height: 1.6;
+}
+
+/* Titol */
+header {
+  background-color: #0077b6;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  border-bottom: 4px solid #023e8a;
+}
+
+header h1 {
+  margin-bottom: 10px;
+}
+
+/* Navegacio/menu */
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  padding: 8px 15px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+  background-color: #023e8a;
+  color: #ffd60a;
+}
+
+/*ajustes image fondo*/
+.image-fondo {
+  background-image: linear-gradient(rgba(240, 248, 255, 0.8), rgba(240, 248, 255, 0.8)), url('../images/fondo_quisom.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  min-height: 50vh;
+  padding: 40px 0;
+}
+
+/* ajustes banner arriba*/
+#banner-quisom {
+  height: 300px;
+  background-image: url('../images/full-shot-swimmer-with-equipment-pool.jpg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  border-bottom: 5px solid #ffd60a;
+}
+
+#banner-quisom .text-damunt {
+  background-color: rgba(96, 174, 226, 0.7);
+  padding: 20px 40px;
+  border-radius: 10px;
+  color: white;
+  text-align: center;
+}
+
+/* ajustes layout quisom */
+#layout-principal {
+  display: flex;
+  max-width: 1200px;
+  margin: 40px auto 0 auto;
+  gap: 30px;
+  padding: 0 20px 40px 20px;
+  align-items: stretch;
+  
+}
+
+/*ajustes menus*/
+#esquerra, #dreta {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 1;
+  background-color: rgba(202, 240, 248, 0.95);
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+#dreta ul {
+  list-style: none;
+}
+
+#dreta ul li {
+  margin-bottom: 15px;
+  padding-left: 20px;
+  position: relative;
+}
+
+/*ajustes h3 ttulo*/
+h3{
+  margin-bottom: 20px;
+  border-bottom: 2px solid #ffd60a;
+  padding-bottom: 10px;
+  color: #0077b6;
+}
+
+/* ajustes animacionees menus */
+#esquerra, #dreta {
+  transition: transform 0.3s ease;
+}
+
+#esquerra:hover, #dreta:hover {
+  transform: translateY(-5px);
+}
+
+/* Peu */
+footer {
+  background-color: #0077b6;
+  color: white;
+  text-align: center;
+  padding: 12px;
+}

@@ -1,0 +1,175 @@
+@font-face{
+  font-family: 'Roboto-Regular';;
+  src: url('../fonts_pagina/Roboto-Regular.ttf');
+}
+
+/* Configuracio de la pagina i el body */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body{
+  font-family: 'Roboto-Regular';
+  background-color: #f0f8ff;
+  color: #023e8a;
+  line-height: 1.6;
+}
+
+/* Titol */
+header {
+  background-color: #0077b6;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  border-bottom: 4px solid #023e8a;
+}
+
+header h1 {
+  margin-bottom: 10px;
+}
+
+/* Navegacio/menu */
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  padding: 8px 15px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+  background-color: #023e8a;
+  color: #ffd60a;
+}
+
+/* ajustes imagen de fondo */
+.seccio-contacte {
+  min-height: 85vh;
+  background-image: url('../images/imagen_formulario.webp');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+}
+
+.seccio-principal {
+  flex: 1;
+  padding: 60px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contingut {
+  max-width: 1100px;
+  width: 100%;
+  display: flex;
+  gap: 50px;
+  align-items: center;
+}
+
+/* ajustes texto izquierda*/
+.text {
+  flex: 1;
+  color: white;
+}
+
+.text h2 {
+  font-size: 3.2em;
+  line-height: 1.1;
+  margin-bottom: 20px;
+  text-transform: none;
+}
+
+/* ajustes formulario */
+.nombre-formulari {
+  flex: 0.9;
+  background-color: white;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+}
+
+.nombre-formulari h3 {
+  font-size: 1.8em;
+  margin-bottom: 25px;
+  color: #333;
+}
+
+/*ajustes acmpos formulario*/
+.camps {
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.camp-edad {
+  display: flex;
+  gap: 15px;
+}
+
+.camp-edad .camps { 
+  flex: 1; 
+}
+
+label {
+  font-weight: bold;
+  font-size: 0.85em;
+  margin-bottom: 5px;
+  color: #555;
+}
+
+input[type="text"], input[type="email"], input[type="number"], 
+input[type="tel"], select, textarea {
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #fcfcfc;
+  font-size: 1em;
+}
+
+/*ajustes boton enviar*/
+.boto-enviar {
+  width: 100%;
+  padding: 15px;
+  background-color: #13d8d8;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: 1.1em;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.boto-enviar:hover {
+  background-color: #081964;
+  box-shadow: 0 5px 15px rgba(230, 138, 29, 0.4);
+}
+
+.checkbox {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.8em;
+  margin: 15px 0;
+}
+
+/* Peu */
+footer {
+  background-color: #0077b6;
+  color: white;
+  text-align: center;
+  padding: 12px;
+}
+
