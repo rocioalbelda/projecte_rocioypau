@@ -3,9 +3,9 @@
 <head>
   <meta charset="utf-8">
   <title>Pàgina Contacte - AquaNadadors</title>
-  <meta name="author" content="Rocío Albelda">
+  <meta name="author" content="Rocio Albelda i Pau Canet">
   <meta name="description" content="Club de natació AquaNadadors">
-  <link rel="stylesheet" href="../css/estils.css"> 
+  <link rel="stylesheet" href="../css/contacte.css"> 
   <link rel="icon" href="../images/imagenFavicon.jpg">
 </head>
 <body>
@@ -26,118 +26,68 @@
     </nav>
   </header>
 
-  <!-- Imatge principal -->
-  <section id="imagen-principal">
-    <img src="../images/imagenprincipal.png" alt="Imagen principal de AquaNadadors">
-  </section>
+  <!-- Contingut principal -->
+    <main class="seccio-contacte">
+    <div class="seccio-principal">
+        <div class="contingut">
+            <div class="text">
+              <h2>Deixa les teues dades i comunica't amb nosaltres</h2>
+              <p>Estem ací per a resoldre qualsevol dubte sobre els nostres cursos i entrenaments.</p>
+            </div>
+          <div class="nombre-formulari">
+            <form action="#" method="post">
+              <h3>Les teues dades</h3>
+                    
+          <div class="camps">
+              <label for="nom">Nom complet *</label>
+              <input type="text" id="nom" name="nom" placeholder="Escriu el teu nom" required>
+          </div>
 
+          <div class="camps">
+              <label for="email">Correu electrònic *</label>
+              <input type="email" id="email" name="email" placeholder="exemple@correu.com" required>
+          </div>
 
-    <main>
-      <div class="formulari">
+          <div class="camp-edad">
+              <div class="camps">
+                  <label for="edat">Edat</label>
+                  <input type="number" id="edat" name="edat" min="0" max="120">
+              </div>
+          <div class="camps">
+              <label for="telefon">Telèfon</label>
+                <input type="tel" id="telefon" name="telefon" placeholder="+34 600 000 000">
+          </div>
+        </div>
 
-       <form action="#" method="post">
+          <div class="camps">
+            <label for="motiu">Motiu del missatge</label>
+              <select id="motiu" name="motiu" required>
+                  <option value="">-- Selecciona una opció --</option>
+                  <option value="informacio">Informació general</option>
+                  <option value="suport">Suport tècnic</option>
+              </select>
+          </div>
 
-        <fieldset style="width: 700px;">
-        <legend>Dates de l'usuari</legend> <br>
+          <div class="camps">
+              <label for="missatge">Missatge</label>
+              <textarea id="missatge" name="missatge" rows="3" placeholder="Com et podem ajudar?" required></textarea>
+          </div>
 
-        <!-- 1 Text -->
-        <label for="nom">Nom complet</label>
-        <input type="text" id="nom" name="nom" placeholder="Escriu el teu nom" required>
-        
-        <br>
-        <br>
-
-        <!-- 2 Gmail -->
-        <label for="email">Correu electr&oacute;nic</label>
-        <input type="email" id="email" name="email" placeholder="exemple@correu.com" required>
-
-        <br>
-        <br>
-
-        <!-- 3 Numero -->
-        <label for="edat">Edat</label>
-        <input type="number" id="edat" name="edat" min="0" max="120" required>
-
-        <br>
-        <br>
-
-        <!-- 4 Color -->
-        <label for="color">Color preferit</label>
-        <input type="color" id="color" name="color">
-
-        <br>
-        <br>
-
-        <!-- 5 Tipus hidden -->
-        <input type="hidden" name="formulari" value="contacte">
-
-        <br>
-        <br>
-
-        <!-- 6 Telefono -->
-        <label for="telefon">Tel&eacute;fono </label>
-        <input type="tele" id="telefon" name="telefon" placeholder="+34 600 000 000">
-
-        <br>
-        <br>
-
-        <!-- 7 Fecha -->
-        <label for="data">Data de contacte</label>
-        <input type="date" id="data" name="data">
-
-        <br>
-        <br>
-
-        <!-- Radio buttons -->
-        <label>G&eacute;nere:</label>
-        <input type="radio" id="home" name="genere" value="home">
-        <label for="home">Home</label>
-        <input type="radio" id="dona" name="genere" value="dona">
-        <label for="dona">Dona</label>
-
-        <br>
-        <br>
-
-        <!-- Checkbox -->
-        <label>
-            <input type="checkbox" name="subscripcio" checked>
-            Vuic recibir not&iacute;cies i actualitzacions
-        </label>
-
-        <br>
-        <br>
-
-        <!-- Select -->
-        <label for="motiu">Motiu del missatge</label>
-        <select id="motiu" name="motiu" required>
-            <option value="">-- Selecciona una opci&oacute; --</option>
-            <option value="informacio">Sol·licitud d'informaci&oacute;</option>
-            <option value="suport">Suport t&eacute;cnic</option>
-            <option value="altres">Altres</option>
-        </select>
-
-        <br>
-        <br>
-
-        <!-- Textarea -->
-        <label for="missatge">Missatge</label>
-        <textarea id="missatge" name="missatge" rows="5" placeholder="Escriu el teu missatge" required></textarea>
-
-        <br>
-        <br>
-
-        <!-- Boto enviar -->
-        <button type="submit">Enviar</button>
-
-        </fieldset>
-      
-      </form>
-
-      </div>
-    
+          <div class="checkbox">
+              <input type="checkbox" id="subscripcio" name="subscripcio" checked>
+              <label for="subscripcio">Vull rebre not&iacute;cies </label>
+          </div>
+            <button type="submit" class="boto-enviar">Enviar</button>
+            <input type="hidden" name="formulari" value="contacte">
+              </form>
+            </div>
+          </div>
+    </div>
     </main>
     
-    <footer></footer>
-  
+    <!-- Peu de pagina -->
+    <footer>
+      <p>&copy; 2025 AquaNadadors. Tots els drets reservats.</p>
+    </footer>
   </body>
 </html>
