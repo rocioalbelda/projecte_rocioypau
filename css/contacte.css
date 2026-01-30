@@ -55,7 +55,7 @@ nav ul li a:hover {
 
 /* ajustes imagen de fondo */
 .seccio-contacte {
-  min-height: 85vh;
+  min-height: 85px;
   background-image: url('../images/imagen_formulario.webp');
   background-size: cover;
   background-position: center;
@@ -93,7 +93,7 @@ nav ul li a:hover {
 
 /* ajustes formulario */
 .nombre-formulari {
-  flex: 0.9;
+  flex: 1;
   background-color: white;
   padding: 40px;
   border-radius: 20px;

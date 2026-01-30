@@ -79,7 +79,7 @@ nav ul li a:hover {
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  min-height: 80vh;
+  min-height: 80px;
   padding: 40px 0;
 }
 
